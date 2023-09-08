@@ -65,7 +65,7 @@ class GeneticAlgorithm():
             expression1 = beforecrossover_expression_list[i]
             expression2 = beforecrossover_expression_list[i + 1]
             if random.random() < self.cr: # crossover as "0.9"
-                docrossover_expression1 = f"{parent1[0]} {parent2[1]} {parent1[2]}" # new born son
+                docrossover_expression1 = f"{parent1[0]} {parent2[1]} {parent1[2]}" 
                 son_expression_list.append(docrossover_expression1)
                 docrossover_expression2 = f"{parent2[0]} {parent1[1]} {parent2[2]}"
                 son_expression_list.append(docrossover_expression2)
