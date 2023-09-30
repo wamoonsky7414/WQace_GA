@@ -41,8 +41,8 @@ for i, df in enumerate(datafields_df_list): # 顯示整個 datafields_df_list �
 combined_df = pd.concat(datafields_df_list, ignore_index=True) # 將所有資料框整合成一個
 print("id in combined_df:", combined_df.shape[0]) # 顯示整合後的資料框行數
 combined_df.head()
+
 df = combined_df
-    
 def generategeneration(df, num_sampindatafield=50, num_ingeneration=50 ): # num_ingeneration is the output of father
     expression_list = [] # generate population
     operator_m = [ 'ts_scale', 'ts_rank' ]
